@@ -9,14 +9,14 @@
 关键词：视频文本检索；CLIP模型；CLIP4Clip模型；低参数量微调；训练加速
 
 ### 技术实现
-1. 模型基于CLIP、CLIP4Clip、AIM，数据集主要使用MSR-VTT；
+1. 模型基于[CLIP](https://github.com/openai/CLIP)、[CLIP4Clip](https://github.com/ArrowLuo/CLIP4Clip)、[AIM](https://github.com/taoyang1122/adapt-image-models)，数据集主要使用[MSR-VTT](http://ms-multimedia-challenge.com/2017/dataset)；
 2. 界面后端由Django实现；
 ### 图片
 
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://github.com/HuangYuantong/video-text-retrieval/image/检索结果展示页面.jpg" width = "80%" alt=""/>
+    src="image/检索结果展示页面.jpg" width = "80%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -29,7 +29,7 @@
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="https://github.com/HuangYuantong/video-text-retrieval/image/视频播放页面.jpg" width = "80%" alt=""/>
+    src="image/视频播放页面.jpg" width = "80%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -43,7 +43,7 @@
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     height = "400"
-    src="https://github.com/HuangYuantong/video-text-retrieval/image/用户搜索视频流程图.svg" width = "60%" alt=""/>
+    src="image/用户搜索视频流程图.svg" width = "60%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -57,7 +57,7 @@
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     height = "200"
-    src="https://github.com/HuangYuantonvideo-text-retrieval/image/算法整体结构.svg" width = "60%" alt=""/>
+    src="image/算法整体结构.svg" width = "60%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -71,7 +71,7 @@
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     height = "200"
-    src="https://github.com/HuangYuantong/video-text-retrieval/image/模型整体结构.svg" width = "60%" alt=""/>
+    src="image/模型整体结构.svg" width = "60%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;

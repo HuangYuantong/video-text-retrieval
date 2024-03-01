@@ -16,7 +16,7 @@
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./图片/检索结果展示页面.jpg" width = "80%" alt=""/>
+    src="./image_preview/1.jpg" width = "80%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -29,7 +29,7 @@
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="./图片/视频播放页面.jpg" width = "80%" alt=""/>
+    src="./image_preview/2.jpg" width = "80%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -42,8 +42,22 @@
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    height = "400"
+    src="./image_preview/3.svg" width = "60%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+    用户搜索视频流程图
+  	</div>
+</center>
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     height = "200"
-    src="./图片/算法整体结构.svg" width = "60%" alt=""/>
+    src="./image_preview/4.svg" width = "60%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -57,26 +71,12 @@
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     height = "200"
-    src="./图片/模型整体结构.svg" width = "60%" alt=""/>
+    src="./image_preview/5.svg" width = "60%" alt=""/>
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
     padding: 2px;">
     模型整体结构
-  	</div>
-</center>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    height = "400"
-    src="./图片/用户搜索视频流程图.svg" width = "60%" alt=""/>
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">
-    用户搜索视频流程图
   	</div>
 </center>

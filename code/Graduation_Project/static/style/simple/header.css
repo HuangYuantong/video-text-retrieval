@@ -1,0 +1,101 @@
+.header {
+    /*flex*/
+    display: flex;
+    justify-content: space-between;
+    /*fixed*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 57px;
+
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.header-1,
+.header-2,
+.header-3 {
+    display: flex;
+    align-items: center;
+}
+
+
+.hamburger-menu {
+    width: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    cursor: pointer;
+}
+
+.header-2 {
+    flex: 1;
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+.search-bar-holder {
+    display: flex;
+    flex: 1;
+    width: max-content;
+    height: max-content;
+}
+
+.search-bar {
+    flex: 1;
+    width: 0;
+    height: 37px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    box-shadow: inset 0 1px 2px rgb(238, 238, 238);
+
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.button-with-pop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.header-3 {
+    max-width: 180px;
+    margin-left: 29px;
+    margin-right: 24px;
+    justify-content: space-between;
+}
+
+.button-with-pop .tooltip {
+    /*absolute放在relative里面悬浮*/
+    position: absolute;
+    bottom: -50px;
+    /*透明度，0~1，1是不透明*/
+    opacity: 0;
+    transition: opacity 0.15s;
+    /*pointer在该位置不反应*/
+    pointer-events: none;
+    /*不换行*/
+    white-space: nowrap;
+
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    padding: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.button-with-pop:hover .tooltip {
+    opacity: 1;
+}
+
+.hamburger-menu:hover,
+.button-with-pop:hover {
+    background-color: rgb(238, 238, 238);
+}

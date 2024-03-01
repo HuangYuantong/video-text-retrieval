@@ -1,0 +1,56 @@
+{% extends 'website/main.html' %}
+{% load static %}
+
+{% block body %}
+    <header class="header">
+        <div class="header-1">
+            <a {% if mark_self == 'on' %} href="{% url 'home_valon' %}"
+            {% else %} href="{% url 'home_valoff' %}" {% endif %}>
+                <img class="hamburger-menu" src="{% static 'style/simple/icons/home.svg' %}" alt="图片加载失败">
+            </a>
+        </div>
+
+        <div class="header-2">
+            <form class="search-bar-holder" method="get"
+                    {% if mark_self == 'on' %} action="{% url 'home_valon' %}"
+                    {% else %} action="{% url 'home_valoff' %}" {% endif %}>
+                {% if sentence %}
+                    <input class="search-bar" placeholder="Search for video..." name="q" value="{{ sentence }}">
+                {% else %}
+                    <input class="search-bar" placeholder="Search for video..." name="q">
+                {% endif %}
+            </form>
+        </div>
+
+        <div class="header-3">
+
+            {% if mark_self == 'on' %}
+                <div class="button-with-pop">
+                    <a href="{% url 'home_valoff' %}">
+                        <label>
+                            <img src="{% static 'style/simple/icons/subscriptions.svg' %}" alt="图片加载失败"
+                                 width="24px">
+                        </label>
+                    </a>
+                    <div class="tooltip">关闭文字匹配</div>
+                </div>
+                <p class="possibility" style="margin-top: 0;margin-left: 8px;">MSR-VTT: {{ total_video }} in total</p>
+
+            {% else %}
+                <div class="button-with-pop">
+                    <a href="{% url 'home_valon' %}">
+                        <label>
+                            <img src="{% static 'style/simple/icons/originals.svg' %}" alt="图片加载失败" width="24px">
+                        </label>
+                    </a>
+                    <div class="tooltip">开启文字匹配</div>
+                </div>
+                <p class="possibility" style="margin-top: 0;margin-left: 8px;">videos: {{ total_video }} in total</p>
+            {% endif %}
+
+        </div>
+
+    </header>
+
+    {% block main %} 没有子版时的默认内容 {% endblock %}
+{% endblock %}

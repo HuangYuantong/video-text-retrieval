@@ -1,0 +1,13 @@
+Django
+torch
+Pillow
+torchvision
+tqdm
+numpy
+ftfy
+regex
+timm
+einops
+pandas
+scipy
+av

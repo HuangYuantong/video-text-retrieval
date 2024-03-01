@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Search System</title>
+    <link rel="stylesheet" href="{% static 'style/simple/general.css' %}">
+    <link rel="stylesheet" href="{% static 'style/simple/header.css' %}">
+    <link rel="stylesheet" href="{% static 'style/simple/home.css' %}">
+</head>
+
+{# 行注释（主要是HTML中的%部分Django仍会使用） #}
+{% comment %}
+块注释
+<!-- HTML中用这个注释 -->
+{{}}表取值，{% %}内放逻辑代码
+字典查找，属性查找、列表索引查找等，均用点符号（如A.b）
+{% endcomment %}
+
+
+<body>
+{% comment %}
+block：{% block name %} …… {% endblock %}：
+       名为 name 的块（名字必填参数），使用子版中相应block换入
+{% endcomment %}
+{% block body %} 没有子版时的默认内容 {% endblock %}
+
+{#<footer style="height: 200px;"></footer>#}
+</body>
+</html>

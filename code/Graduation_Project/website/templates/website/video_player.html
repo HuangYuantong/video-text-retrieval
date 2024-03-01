@@ -1,0 +1,38 @@
+{% extends 'website/header.html' %}
+{% load static %}
+
+{% block main %}
+
+    <main>
+        {# 视频播放栏 #}
+        <div {% if  mark_self == 'on' %} class="home-flex-video" {% endif %}>
+            <section style="height: fit-content;">
+                <button onclick="goBack()" class="left">
+                    <img src="{% static 'style/simple/icons/left.svg' %}" width="24px">
+                </button>
+                <div class="video-player-holder">
+                    <video class="video-player" controls>
+                        <source src="{% get_static_prefix %}videos/video{{ video_id }}.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            {#视频信息展示#}
+            <section class="section-info">
+                <h5 class="section-info-title">Sentences in MSR-VTT</h5>
+                <p class="category">Category: {{ category }}</p>
+                {% for sentence in sentences %}
+                    <p class="sentence">{{ sentence }}</p>
+                {% endfor %}
+            </section>
+        </div>
+
+        {# JavaScript代码，让浏览器返回缓存里的上一页，且不会刷新 #}
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+
+    </main>
+
+{% endblock %}

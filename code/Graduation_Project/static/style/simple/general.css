@@ -1,0 +1,32 @@
+body {
+    /*font会继承，盒子模型的属性不会继承*/
+    font-family: Arial;
+    background-color: rgb(238, 238, 238);
+
+    margin: 0;
+    padding-top: 57px;
+}
+
+section {
+    background-color: rgb(249, 249, 249);
+    border-width: 1px;
+    border-radius: 1vh;
+    border-color: rgb(220, 220, 220);
+    border-style: solid;
+
+    margin: 2px;
+    padding: 0;
+}
+
+body img,
+body button {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}

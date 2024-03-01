@@ -1,0 +1,13 @@
+torch~=1.7.1+cu110
+Pillow~=9.4.0
+torchvision~=0.8.2+cu110
+tqdm~=4.65.0
+numpy~=1.24.2
+ftfy~=6.1.1
+regex~=2023.3.23
+timm~=0.5.4
+einops~=0.6.0
+pandas~=1.5.3
+scipy~=1.9.1
+av~=10.0.0
+opencv-python~=4.7.0.72
